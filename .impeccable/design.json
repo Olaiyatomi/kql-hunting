@@ -1,0 +1,594 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-12T00:00:00Z",
+  "title": "Design System: KQL Hunting",
+  "extensions": {
+    "colorMeta": {
+      "shell": {
+        "role": "primary",
+        "displayName": "Navigator Ink",
+        "canonical": "#14213d",
+        "tonalRamp": [
+          "#070d1a",
+          "#0d1628",
+          "#14213d",
+          "#22325a",
+          "#33466f",
+          "#59647c",
+          "#c3cde0",
+          "#eef1f7"
+        ],
+        "darkValue": "#0a1326"
+      },
+      "shell-ink": {
+        "role": "neutral",
+        "displayName": "Shell White",
+        "canonical": "#ffffff"
+      },
+      "shell-muted": {
+        "role": "neutral",
+        "displayName": "Shell Muted",
+        "canonical": "#c3cde0",
+        "tonalRamp": [
+          "#070d1a",
+          "#0d1628",
+          "#14213d",
+          "#22325a",
+          "#33466f",
+          "#59647c",
+          "#c3cde0",
+          "#eef1f7"
+        ]
+      },
+      "shell-field": {
+        "role": "neutral",
+        "displayName": "Shell Field",
+        "canonical": "#22325a",
+        "tonalRamp": [
+          "#070d1a",
+          "#0d1628",
+          "#14213d",
+          "#22325a",
+          "#33466f",
+          "#59647c",
+          "#c3cde0",
+          "#eef1f7"
+        ],
+        "darkValue": "#17233f"
+      },
+      "shell-line": {
+        "role": "neutral",
+        "displayName": "Shell Line",
+        "canonical": "#33466f",
+        "tonalRamp": [
+          "#070d1a",
+          "#0d1628",
+          "#14213d",
+          "#22325a",
+          "#33466f",
+          "#59647c",
+          "#c3cde0",
+          "#eef1f7"
+        ],
+        "darkValue": "#26365a"
+      },
+      "bg": {
+        "role": "neutral",
+        "displayName": "Paper White",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#14213d",
+          "#3f4b65",
+          "#59647c",
+          "#95a2bb",
+          "#c4ccd9",
+          "#dfe4ec",
+          "#f1f4f8",
+          "#f5f7fa"
+        ],
+        "darkValue": "#0d1628"
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Desk Grey",
+        "canonical": "#f5f7fa",
+        "tonalRamp": [
+          "#14213d",
+          "#3f4b65",
+          "#59647c",
+          "#95a2bb",
+          "#c4ccd9",
+          "#dfe4ec",
+          "#f1f4f8",
+          "#f5f7fa"
+        ],
+        "darkValue": "#111c33"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#14213d",
+        "tonalRamp": [
+          "#14213d",
+          "#3f4b65",
+          "#59647c",
+          "#95a2bb",
+          "#c4ccd9",
+          "#dfe4ec",
+          "#f1f4f8",
+          "#f5f7fa"
+        ],
+        "darkValue": "#e4eaf5"
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Ink 2",
+        "canonical": "#3f4b65",
+        "tonalRamp": [
+          "#14213d",
+          "#3f4b65",
+          "#59647c",
+          "#95a2bb",
+          "#c4ccd9",
+          "#dfe4ec",
+          "#f1f4f8",
+          "#f5f7fa"
+        ],
+        "darkValue": "#b9c4d8"
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Ink 3",
+        "canonical": "#59647c",
+        "tonalRamp": [
+          "#14213d",
+          "#3f4b65",
+          "#59647c",
+          "#95a2bb",
+          "#c4ccd9",
+          "#dfe4ec",
+          "#f1f4f8",
+          "#f5f7fa"
+        ],
+        "darkValue": "#95a2bb"
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#dfe4ec",
+        "tonalRamp": [
+          "#14213d",
+          "#3f4b65",
+          "#59647c",
+          "#95a2bb",
+          "#c4ccd9",
+          "#dfe4ec",
+          "#f1f4f8",
+          "#f5f7fa"
+        ],
+        "darkValue": "#213050"
+      },
+      "line-strong": {
+        "role": "neutral",
+        "displayName": "Strong Hairline",
+        "canonical": "#c4ccd9",
+        "tonalRamp": [
+          "#14213d",
+          "#3f4b65",
+          "#59647c",
+          "#95a2bb",
+          "#c4ccd9",
+          "#dfe4ec",
+          "#f1f4f8",
+          "#f5f7fa"
+        ],
+        "darkValue": "#2f4166"
+      },
+      "r0": {
+        "role": "primary",
+        "displayName": "Empty Cell Grey",
+        "canonical": "#f1f4f8",
+        "tonalRamp": [
+          "#1f4e79",
+          "#3a6ea5",
+          "#6baed6",
+          "#f1f4f8"
+        ],
+        "darkValue": "#131f38",
+        "step": 0
+      },
+      "r1": {
+        "role": "primary",
+        "displayName": "Sky Shade",
+        "canonical": "#6baed6",
+        "tonalRamp": [
+          "#1f4e79",
+          "#3a6ea5",
+          "#6baed6",
+          "#f1f4f8"
+        ],
+        "darkValue": "#255181",
+        "step": 1
+      },
+      "r2": {
+        "role": "primary",
+        "displayName": "Navigator Blue",
+        "canonical": "#3a6ea5",
+        "tonalRamp": [
+          "#1f4e79",
+          "#3a6ea5",
+          "#6baed6",
+          "#f1f4f8"
+        ],
+        "darkValue": "#4a8ccf",
+        "step": 2
+      },
+      "r3": {
+        "role": "primary",
+        "displayName": "Deep Coverage Navy",
+        "canonical": "#1f4e79",
+        "tonalRamp": [
+          "#1f4e79",
+          "#3a6ea5",
+          "#6baed6",
+          "#f1f4f8"
+        ],
+        "darkValue": "#9cc7ee",
+        "step": 3,
+        "note": "Dark theme ramp runs dim to bright: #131f38, #255181, #4a8ccf, #9cc7ee"
+      },
+      "badge-dark": {
+        "role": "primary",
+        "displayName": "Lifted Navigator Blue",
+        "canonical": "#2f6aa8",
+        "tonalRamp": [
+          "#070d1a",
+          "#0d1628",
+          "#14213d",
+          "#22325a",
+          "#33466f",
+          "#59647c",
+          "#c3cde0",
+          "#eef1f7"
+        ],
+        "note": "Dark-theme fill for the Tested badge and checkbox accent."
+      },
+      "accent": {
+        "role": "secondary",
+        "displayName": "Signal Orange",
+        "canonical": "#e4572e",
+        "tonalRamp": [
+          "#4a1503",
+          "#7c2d0b",
+          "#a8380a",
+          "#c2410c",
+          "#e4572e",
+          "#ef8a6b",
+          "#f7c3b1",
+          "#fdeee8"
+        ]
+      },
+      "accent-strong": {
+        "role": "secondary",
+        "displayName": "Burnt Signal",
+        "canonical": "#c2410c",
+        "tonalRamp": [
+          "#4a1503",
+          "#7c2d0b",
+          "#a8380a",
+          "#c2410c",
+          "#e4572e",
+          "#ef8a6b",
+          "#f7c3b1",
+          "#fdeee8"
+        ],
+        "note": "Carries white text (5.2:1)."
+      },
+      "accent-strong-hover": {
+        "role": "secondary",
+        "displayName": "Ember",
+        "canonical": "#a8380a",
+        "tonalRamp": [
+          "#4a1503",
+          "#7c2d0b",
+          "#a8380a",
+          "#c2410c",
+          "#e4572e",
+          "#ef8a6b",
+          "#f7c3b1",
+          "#fdeee8"
+        ]
+      },
+      "accent-soft": {
+        "role": "secondary",
+        "displayName": "Signal Wash",
+        "canonical": "rgba(228, 87, 46, .14)",
+        "darkValue": "rgba(228, 87, 46, .22)"
+      },
+      "pass": {
+        "role": "tertiary",
+        "displayName": "Proof Green",
+        "canonical": "#1c7a4b",
+        "tonalRamp": [
+          "#0a2e1c",
+          "#114a2e",
+          "#1c7a4b",
+          "#2a9a62",
+          "#5ccf8f",
+          "#93e0b4",
+          "#c8f0d8",
+          "#ecfaf1"
+        ],
+        "darkValue": "#5ccf8f"
+      },
+      "code-bg": {
+        "role": "neutral",
+        "displayName": "Code Slab",
+        "canonical": "#0f1a30",
+        "tonalRamp": [
+          "#070d1a",
+          "#0d1628",
+          "#14213d",
+          "#22325a",
+          "#33466f",
+          "#59647c",
+          "#c3cde0",
+          "#eef1f7"
+        ],
+        "darkValue": "#08101f"
+      },
+      "code-ink": {
+        "role": "neutral",
+        "displayName": "Code Ink",
+        "canonical": "#dbe4f3"
+      },
+      "code-line": {
+        "role": "neutral",
+        "displayName": "Code Line",
+        "canonical": "#22314f",
+        "tonalRamp": [
+          "#070d1a",
+          "#0d1628",
+          "#14213d",
+          "#22325a",
+          "#33466f",
+          "#59647c",
+          "#c3cde0",
+          "#eef1f7"
+        ],
+        "darkValue": "#1b2945"
+      },
+      "code-chrome-muted": {
+        "role": "neutral",
+        "displayName": "Code Chrome Muted",
+        "canonical": "#a7b3ca"
+      },
+      "code-control-hover": {
+        "role": "neutral",
+        "displayName": "Code Control Hover",
+        "canonical": "#2d4068"
+      },
+      "tk-op": {
+        "role": "neutral",
+        "displayName": "Operator Salmon",
+        "canonical": "#ffa07a"
+      },
+      "tk-fn": {
+        "role": "neutral",
+        "displayName": "Function Sky",
+        "canonical": "#8fc3ff"
+      },
+      "tk-str": {
+        "role": "neutral",
+        "displayName": "String Mint",
+        "canonical": "#a8e0b4"
+      },
+      "tk-num": {
+        "role": "neutral",
+        "displayName": "Number Amber",
+        "canonical": "#f2c66d"
+      },
+      "tk-com": {
+        "role": "neutral",
+        "displayName": "Comment Slate",
+        "canonical": "#8390aa",
+        "note": "Italic."
+      }
+    },
+    "typographyMeta": {
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Open query title in the detail pane; 23px at 860px and below; max 30ch, balanced."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Cheat-sheet section headings (22px); nav heading 20px and wordmark 19px share the role."
+      },
+      "title-sm": {
+        "displayName": "Title Small",
+        "purpose": "Matrix header (17px) and list header (15px)."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text with tabular numerals; prose capped at 75ch."
+      },
+      "body-sm": {
+        "displayName": "Body Small",
+        "purpose": "Filter labels, fact values, proof rows, notes, row subtitles, footer."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Uppercase detail-section headings (ink-2) and cheat-sheet column heads (12px, ink-3)."
+      },
+      "cell": {
+        "displayName": "Cell",
+        "purpose": "Technique names in matrix cells, clamped to four lines."
+      },
+      "code": {
+        "displayName": "Code",
+        "purpose": "KQL blocks; ligatures and contextual alternates off."
+      },
+      "mono-meta": {
+        "displayName": "Mono Meta",
+        "purpose": "Query IDs, technique codes, tuning keys, expected counts."
+      }
+    },
+    "shadows": [
+      {
+        "name": "toast-float",
+        "value": "0 6px 20px rgba(10, 19, 38, .25)",
+        "purpose": "Copy-confirmation toast; the only floating element."
+      },
+      {
+        "name": "ring-hover",
+        "value": "inset 0 0 0 1px var(--ink)",
+        "purpose": "Hovered matrix cell."
+      },
+      {
+        "name": "ring-selected",
+        "value": "inset 0 0 0 2px var(--accent), 0 0 0 1px var(--accent)",
+        "purpose": "Selected matrix cell."
+      },
+      {
+        "name": "ring-current-row",
+        "value": "inset 0 0 0 1px var(--accent)",
+        "purpose": "Current query row."
+      }
+    ],
+    "motion": [
+      {
+        "name": "cell-shade",
+        "value": "background-color 160ms ease-out, color 160ms ease-out",
+        "purpose": "Matrix cells re-shading as filters change; the only transition in the system. Disabled under prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "rebalance",
+        "value": "1100px"
+      },
+      {
+        "name": "compact",
+        "value": "860px"
+      }
+    ],
+    "openDecisions": [
+      {
+        "topic": "Font hosting",
+        "state": "Source Sans 3 and JetBrains Mono currently load from Google Fonts; whether to self-host is undecided with the user."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Coverage Cell",
+      "kind": "custom",
+      "refersTo": "matrix-cell",
+      "description": "Technique button shaded by query count; the only animated element.",
+      "html": "<div class=\"ds-matrix\"><button class=\"ds-cell\" data-r=\"0\"><span>Golden Ticket</span><span class=\"ds-meta\"><span>T1558.001</span></span></button><button class=\"ds-cell\" data-r=\"1\"><span>Password Spraying</span><span class=\"ds-meta\"><span>T1110.003</span><b>1</b></span></button><button class=\"ds-cell\" data-r=\"2\"><span>Cloud Accounts</span><span class=\"ds-meta\"><span>T1078.004</span><b>2</b></span></button><button class=\"ds-cell\" data-r=\"3\" aria-pressed=\"true\"><span>Steal Web Session Cookie</span><span class=\"ds-meta\"><span>T1539</span><b>4</b></span></button></div>",
+      "css": ".ds-matrix { display: grid; grid-template-columns: repeat(4, 110px); gap: 3px; } .ds-cell { display: block; text-align: left; padding: 6px 7px; border: 0; border-radius: 2px; background: var(--r0, #f1f4f8); color: var(--r0-ink, #59647c); font: 400 12px/1.25 \"Source Sans 3\", \"Segoe UI\", system-ui, sans-serif; transition: background-color 160ms ease-out, color 160ms ease-out; cursor: pointer; } .ds-cell[data-r=\"1\"] { background: var(--r1, #6baed6); color: var(--r1-ink, #14213d); } .ds-cell[data-r=\"2\"] { background: var(--r2, #3a6ea5); color: var(--r2-ink, #fff); } .ds-cell[data-r=\"3\"] { background: var(--r3, #1f4e79); color: var(--r3-ink, #fff); } .ds-cell:hover { box-shadow: inset 0 0 0 1px var(--ink, #14213d); } .ds-cell[aria-pressed=\"true\"] { box-shadow: inset 0 0 0 2px var(--accent, #e4572e), 0 0 0 1px var(--accent, #e4572e); } .ds-cell:focus-visible { outline: 2px solid var(--accent, #e4572e); outline-offset: 2px; } .ds-meta { display: flex; justify-content: space-between; margin-top: 3px; font: 500 11px/1.2 \"JetBrains Mono\", ui-monospace, monospace; font-variant-ligatures: none; }"
+    },
+    {
+      "name": "Copy Button (primary)",
+      "kind": "button",
+      "refersTo": "button-copy-primary",
+      "description": "The core action on the code slab: copy the KQL.",
+      "html": "<div class=\"ds-slab\"><button class=\"ds-copy\"><svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><rect x=\"5\" y=\"5\" width=\"9\" height=\"9\" rx=\"1\"/><path d=\"M11 5V3a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h2\"/></svg>Copy KQL</button></div>",
+      "css": ".ds-slab { background: var(--code-bg, #0f1a30); padding: 8px; border-radius: 3px; display: inline-block; } .ds-copy { display: inline-flex; align-items: center; gap: 6px; height: 28px; padding: 0 10px; background: var(--accent-strong, #c2410c); color: #fff; border: 0; border-radius: 2px; font: 600 13px \"Source Sans 3\", \"Segoe UI\", system-ui, sans-serif; cursor: pointer; } .ds-copy:hover { background: #a8380a; } .ds-copy:focus-visible { outline: 2px solid var(--accent, #e4572e); outline-offset: 2px; } .ds-copy svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }"
+    },
+    {
+      "name": "Code Button",
+      "kind": "button",
+      "refersTo": "button-code",
+      "description": "Secondary actions on the code slab.",
+      "html": "<div class=\"ds-slab2\"><button class=\"ds-codebtn\">Open in ADX</button></div>",
+      "css": ".ds-slab2 { background: var(--code-bg, #0f1a30); padding: 8px; border-radius: 3px; display: inline-block; } .ds-codebtn { height: 28px; padding: 0 10px; background: #22314f; color: #fff; border: 0; border-radius: 2px; font: 600 13px \"Source Sans 3\", \"Segoe UI\", system-ui, sans-serif; cursor: pointer; } .ds-codebtn:hover { background: #2d4068; } .ds-codebtn:focus-visible { outline: 2px solid var(--accent, #e4572e); outline-offset: 2px; }"
+    },
+    {
+      "name": "Proof Badges",
+      "kind": "chip",
+      "refersTo": "badge-tested",
+      "description": "Filled navy for CI-tested detections, outlined for hand-written hunting queries.",
+      "html": "<span class=\"ds-badge ds-tested\"><svg viewBox=\"0 0 12 12\" aria-hidden=\"true\"><path d=\"M2.5 6.5l2.5 2.5 4.5-6\"/></svg>Tested</span> <span class=\"ds-badge ds-hunt\">Hunting</span>",
+      "css": ".ds-badge { display: inline-flex; align-items: center; gap: 4px; height: 21px; padding: 0 7px; font: 700 12px \"Source Sans 3\", \"Segoe UI\", system-ui, sans-serif; letter-spacing: .02em; border-radius: 2px; } .ds-tested { background: var(--shell, #14213d); color: #fff; } .ds-hunt { box-shadow: inset 0 0 0 1px var(--line-strong, #c4ccd9); color: var(--ink-2, #3f4b65); } .ds-badge svg { width: 11px; height: 11px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }"
+    },
+    {
+      "name": "Shell Bar with Tabs and Search",
+      "kind": "nav",
+      "refersTo": "tab",
+      "description": "Navy top bar: tabs with orange current underline and the shell search field.",
+      "html": "<header class=\"ds-bar\"><strong class=\"ds-brand\">KQL Hunting</strong><nav class=\"ds-tabs\"><a href=\"#\" aria-current=\"page\">Library</a><a href=\"#\">Cheat sheet</a></nav><input class=\"ds-search\" type=\"search\" placeholder=\"Search queries, techniques, tables\"></header>",
+      "css": ".ds-bar { display: flex; align-items: center; gap: 28px; height: 56px; padding: 0 24px; background: var(--shell, #14213d); color: #fff; font: 400 15px/1.5 \"Source Sans 3\", \"Segoe UI\", system-ui, sans-serif; } .ds-brand { font-size: 19px; font-weight: 700; letter-spacing: -.01em; } .ds-tabs { display: flex; height: 100%; } .ds-tabs a { display: flex; align-items: center; padding: 0 14px; color: var(--shell-muted, #c3cde0); font-weight: 600; text-decoration: none; border-top: 3px solid transparent; border-bottom: 3px solid transparent; } .ds-tabs a:hover { color: #fff; } .ds-tabs a[aria-current=\"page\"] { color: #fff; border-bottom-color: var(--accent, #e4572e); } .ds-tabs a:focus-visible { outline: 2px solid var(--accent, #e4572e); outline-offset: 2px; } .ds-search { flex: 1; max-width: 360px; height: 36px; padding: 0 12px; background: var(--shell-field, #22325a); border: 1px solid var(--shell-line, #33466f); border-radius: 3px; color: #fff; font: inherit; } .ds-search::placeholder { color: var(--shell-muted, #c3cde0); } .ds-search:focus { outline: none; border-color: var(--accent, #e4572e); }"
+    },
+    {
+      "name": "Filter Select",
+      "kind": "input",
+      "refersTo": "select",
+      "description": "Table and product filters on the matrix header.",
+      "html": "<label class=\"ds-sel\"><span>Table</span><select><option>All tables</option><option>SigninLogs</option></select></label>",
+      "css": ".ds-sel { display: inline-flex; align-items: center; gap: 8px; font: 400 14px \"Source Sans 3\", \"Segoe UI\", system-ui, sans-serif; color: var(--ink-3, #59647c); } .ds-sel select { height: 32px; padding: 0 30px 0 10px; border: 1px solid var(--line-strong, #c4ccd9); border-radius: 3px; background: var(--bg, #fff) url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M3 4.5l3 3 3-3' fill='none' stroke='%2359647c' stroke-width='1.5'/%3E%3C/svg%3E\") no-repeat right 9px center / 12px; color: var(--ink, #14213d); appearance: none; font: inherit; } .ds-sel select:hover { border-color: var(--ink-3, #59647c); } .ds-sel select:focus-visible { outline: 2px solid var(--accent, #e4572e); outline-offset: 2px; }"
+    },
+    {
+      "name": "Query Row",
+      "kind": "custom",
+      "refersTo": "",
+      "description": "Dense list row: mono ID, title, subtitle, proof badge; current row gets the orange inset ring.",
+      "html": "<button class=\"ds-row\" aria-current=\"true\"><span class=\"ds-id\">ITD-003</span><span class=\"ds-t\">Password spray from a single IP</span><span class=\"ds-badge2\">Tested</span><span class=\"ds-sub\">T1110.003 · <code>SigninLogs</code></span></button>",
+      "css": ".ds-row { display: grid; grid-template-columns: 64px 1fr auto; gap: 2px 12px; width: 420px; padding: 11px 24px; text-align: left; background: none; border: 0; border-bottom: 1px solid var(--line, #dfe4ec); font: 400 15px/1.5 \"Source Sans 3\", \"Segoe UI\", system-ui, sans-serif; color: var(--ink, #14213d); cursor: pointer; } .ds-row:hover, .ds-row[aria-current=\"true\"] { background: var(--surface, #f5f7fa); } .ds-row[aria-current=\"true\"] { box-shadow: inset 0 0 0 1px var(--accent, #e4572e); } .ds-row:focus-visible { outline: 2px solid var(--accent, #e4572e); outline-offset: 2px; } .ds-id { font: 500 12.5px/1.6 \"JetBrains Mono\", ui-monospace, monospace; font-variant-ligatures: none; color: var(--ink-3, #59647c); grid-row: span 2; } .ds-t { font-weight: 600; line-height: 1.3; } .ds-sub { grid-column: 2; font-size: 13px; color: var(--ink-3, #59647c); } .ds-sub code { font: 12px \"JetBrains Mono\", ui-monospace, monospace; font-variant-ligatures: none; } .ds-badge2 { grid-row: 1 / span 2; grid-column: 3; align-self: start; height: 21px; padding: 0 7px; display: inline-flex; align-items: center; background: var(--shell, #14213d); color: #fff; font-size: 12px; font-weight: 700; border-radius: 2px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Navigator Sheet",
+    "overview": "The system borrows the working material analysts already think in: the MITRE ATT&CK Navigator. An ink-navy shell bar sits over a plain white work surface, and the one expressive object on the page is the coverage matrix, a dense grid of technique cells shaded by how many queries reach them. The matrix is an instrument, not decoration; its shading recomputes live as search and filters change, and it is the only thing on the page that moves.\n\nEverything else is quiet tooling. Rows are dense and divided by 1px hairlines, corners are barely softened (2-3px), depth is almost entirely flat, and type is a single humanist sans for interface with a monospace for anything an analyst would type or paste: KQL, query IDs, technique codes, table names. Code blocks sit on a dark navy slab in both themes so pasted KQL always reads the same way. One signal orange marks where you are (the selected cell, the current tab, keyboard focus) and nothing else.\n\nThe dark theme keeps the same world on a navy-black ground and flips the coverage ramp so that more coverage reads as brighter, not darker.",
+    "keyCharacteristics": [
+      "Navy shell bar over a white (or navy-black) work surface.",
+      "Coverage heatmap with an empty state plus three shaded steps (0, 1, 2, 3+).",
+      "One signal orange for selection, current location and focus; never a fill for surfaces.",
+      "Dense rows, 1px hairlines, 2-3px corners, flat by default.",
+      "Source Sans 3 for interface, JetBrains Mono with ligatures off for code and identifiers.",
+      "Motion is limited to the matrix cells (160ms background and text color)."
+    ],
+    "rules": [
+      {
+        "name": "The Signal Rule",
+        "body": "Orange means \"here\": selected, current, or focused. It outlines, underlines or rings; it never fills a surface. Two fills are allowed: Burnt Signal where orange must carry white text, and the centre square of the brand mark, which pictures a selected cell.",
+        "section": "colors"
+      },
+      {
+        "name": "The Paired Ink Rule",
+        "body": "Every coverage step is used with its own ink. Ramp colors carry meaning (query count); do not reuse them as decorative blues.",
+        "section": "colors"
+      },
+      {
+        "name": "The Literal Code Rule",
+        "body": "All mono text runs with ligatures and contextual alternates off (\"calt\" 0, \"liga\" 0) so `==`, `>=` and `!=` read exactly as typed. This includes mono set through the font shorthand.",
+        "section": "typography"
+      },
+      {
+        "name": "The Machine-Readable Rule",
+        "body": "Anything an analyst would paste or search for (KQL, IDs, technique codes, table names, function names) is set in mono; everything else is sans.",
+        "section": "typography"
+      },
+      {
+        "name": "The Ring, Not Lift Rule",
+        "body": "Hover, selection and current state are inset rings or tints. Nothing rises on hover.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** shade coverage with r0 plus the three ramp steps, capped at 3+, each with its paired ink.",
+      "**Do** keep Signal Orange to selection, current location and focus (outline, underline, ring, caret), and use Burnt Signal when orange must carry white text.",
+      "**Do** set KQL, IDs, technique codes and table names in JetBrains Mono with ligatures off.",
+      "**Do** keep code on the dark Code Slab in both themes.",
+      "**Do** draw state with inset rings and the Desk Grey tint; keep surfaces flat.",
+      "**Do** keep motion to the matrix cells' 160ms color transitions, and drop all transitions under prefers-reduced-motion."
+    ],
+    "donts": [
+      "**Don't** fill buttons, panels or text backgrounds with Signal Orange; white text on it fails AA, and fills dilute the \"here\" signal (the brand mark's centre square is the one picture-of-selection exception).",
+      "**Don't** reuse coverage ramp blues for decoration or unrelated status; they mean query count.",
+      "**Don't** add hover lift, drop shadows or card chrome to rows, cells or panels; the toast is the only floating element.",
+      "**Don't** animate anything other than the matrix cells.",
+      "**Don't** blur the Tested / Hunting distinction: filled Navigator Ink for tested, outlined for not."
+    ]
+  }
+}
