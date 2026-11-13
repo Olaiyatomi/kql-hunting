@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KQL Hunting</title>
+<meta name="description" content="A searchable library of KQL threat-hunting queries and CI-tested detections for Microsoft Sentinel and Defender XDR, mapped to MITRE ATT&CK, plus a KQL cheat sheet.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<script>
+  try { const t = localStorage.getItem("kql-theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <a class="brand" href="#view=library" aria-label="KQL Hunting, library">
+    <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true">
+      <rect x="1" y="1" width="6" height="6" rx="1" class="m1"/><rect x="9" y="1" width="6" height="6" rx="1" class="m2"/><rect x="17" y="1" width="6" height="6" rx="1" class="m1"/>
+      <rect x="1" y="9" width="6" height="6" rx="1" class="m2"/><rect x="9" y="9" width="6" height="6" rx="1" class="m3"/><rect x="17" y="9" width="6" height="6" rx="1" class="m2"/>
+      <rect x="1" y="17" width="6" height="6" rx="1" class="m1"/><rect x="9" y="17" width="6" height="6" rx="1" class="m2"/><rect x="17" y="17" width="6" height="6" rx="1" class="m1"/>
+    </svg>
+    <span>KQL Hunting</span>
+  </a>
+  <nav class="tabs" aria-label="Sections">
+    <a href="#view=library" data-view="library">Library</a>
+    <a href="#view=cheatsheet" data-view="cheatsheet">Cheat sheet</a>
+  </nav>
+  <div class="search">
+    <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="M13 13l4.5 4.5"/></svg>
+    <input id="search" type="search" autocomplete="off" spellcheck="false" placeholder="Search queries, techniques, tables" aria-label="Search">
+    <kbd aria-hidden="true">/</kbd>
+  </div>
+  <div class="top-actions">
+    <button id="theme" class="icon-btn" type="button" aria-label="Switch to dark theme">
+      <svg class="i-moon" viewBox="0 0 20 20" aria-hidden="true"><path d="M16 12.5A6.5 6.5 0 0 1 7.5 4a6.5 6.5 0 1 0 8.5 8.5z"/></svg>
+      <svg class="i-sun" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="3.5"/><path d="M10 1.5v2M10 16.5v2M1.5 10h2M16.5 10h2M4 4l1.4 1.4M14.6 14.6L16 16M4 16l1.4-1.4M14.6 5.4L16 4"/></svg>
+    </button>
+    <a class="gh" href="https://github.com/Olaiyatomi/kql-hunting">GitHub</a>
+  </div>
+</header>
+
+<main id="main">
+  <section id="library" class="view" aria-labelledby="lib-title">
+    <div class="matrix-panel">
+      <div class="matrix-head">
+        <h1 id="lib-title"><span id="lib-count">0 queries</span> <span class="sub">by ATT&amp;CK tactic and technique. Pick a cell to filter.</span></h1>
+        <div class="filters">
+          <label class="select"><span>Table</span>
+            <select id="f-table"><option value="">All tables</option></select>
+          </label>
+          <label class="select"><span>Runs in</span>
+            <select id="f-product"><option value="">Anywhere</option></select>
+          </label>
+          <label class="check"><input id="f-tested" type="checkbox"> <span>Tested in CI only</span></label>
+          <button id="f-clear" class="text-btn" type="button" hidden>Clear filters</button>
+        </div>
+      </div>
+      <div class="matrix-scroll" tabindex="-1">
+        <div id="matrix" class="matrix" role="group" aria-label="ATT&amp;CK matrix"></div>
+      </div>
+      <div class="legend" aria-hidden="true">
+        <span>Queries</span><i class="r0"></i>0<i class="r1"></i>1<i class="r2"></i>2<i class="r3"></i>3<i class="r4"></i>4+
+      </div>
+    </div>
+
+    <div class="results">
+      <div class="list-wrap">
+        <div class="list-head">
+          <h2 id="list-title">All queries</h2>
+          <span id="list-count" class="muted" aria-live="polite"></span>
+        </div>
+        <ul id="list" class="qlist"></ul>
+      </div>
+      <article id="detail" class="detail" aria-live="polite"></article>
+    </div>
+  </section>
+
+  <section id="cheatsheet" class="view" aria-labelledby="cs-title" hidden>
+    <aside class="cs-nav" aria-label="Cheat sheet sections">
+      <h1 id="cs-title">KQL cheat sheet</h1>
+      <ol id="cs-toc"></ol>
+    </aside>
+    <div id="cs-body" class="cs-body"></div>
+  </section>
+</main>
+
+<footer class="foot">
+  <p><strong>Tested</strong> queries come from <a href="https://github.com/Olaiyatomi/identity-threat-detections">identity-threat-detections</a>. CI replays each one against attack and benign log fixtures in the Azure Data Explorer emulator on every push. <strong>Hunting</strong> queries are written by hand and are not tested in CI.</p>
+  <p>Built by Tomi Olaiya. MIT licensed. MITRE ATT&amp;CK® and ATLAS™ are trademarks of The MITRE Corporation.</p>
+</footer>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script src="data/attack.js"></script>
+<script src="data/detections.js"></script>
+<script src="data/hunting.js"></script>
+<script src="data/cheatsheet.js"></script>
+<script src="assets/site.js"></script>
+</body>
+</html>
