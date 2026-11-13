@@ -472,12 +472,7 @@
         "value": "860px"
       }
     ],
-    "openDecisions": [
-      {
-        "topic": "Font hosting",
-        "state": "Source Sans 3 and JetBrains Mono currently load from Google Fonts; whether to self-host is undecided with the user."
-      }
-    ]
+    "fontHosting": "Self-hosted variable woff2, latin subset, in assets/fonts/ (SIL OFL 1.1). No third-party font requests."
   },
   "components": [
     {

@@ -248,7 +248,7 @@ A cool navy-and-blue instrument palette with a single warm signal.
 
 **Character:** A plain, legible humanist sans doing all interface work at small sizes, paired with a code mono that marks everything machine-readable. Numerals are tabular throughout so counts line up.
 
-Both families currently load from Google Fonts (Source Sans 3 at 400/600/700, JetBrains Mono at 400/500). Whether to self-host them is an open decision with the user, not a settled rule.
+Both families are self-hosted as variable woff2 files (latin subset) in `assets/fonts/`, with their SIL OFL licences beside them. The page makes no third-party font requests: a security reference should not report its readers' visits elsewhere, and analyst machines with restricted egress still get the right faces. Weights in use: Source Sans 3 at 400/600/700, JetBrains Mono at 400/500.
 
 ### Hierarchy
 - **Headline** (700, 26px, 1.2, -0.01em; 23px at 860px and below): the open query's title in the detail pane, balanced, max 30ch.
