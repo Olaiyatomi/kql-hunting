@@ -181,7 +181,7 @@
     for (const q of base) for (const k of q._cells) counts.set(k, (counts.get(k) || 0) + 1);
     matrixEl.querySelectorAll(".cell").forEach(el => {
       const n = counts.get(el.dataset.key) || 0;
-      el.dataset.r = String(Math.min(n, 4));
+      el.dataset.r = String(Math.min(n, 3));
       el.querySelector(".meta b").textContent = n;
       el.setAttribute("aria-pressed", String(el.dataset.tech === state.tech));
       el.setAttribute("aria-label", `${el.querySelector(".nm").textContent}, ${el.dataset.tech}, ${plural(n, "query")}`);
@@ -387,7 +387,7 @@
     const row = e.target.closest(".qrow");
     if (!row) return;
     update({ q: row.dataset.id });
-    if (narrow()) detailEl.scrollIntoView({ behavior: "smooth", block: "start" });
+    if (narrow()) detailEl.scrollIntoView({ block: "start" });
   });
 
   listEl.addEventListener("keydown", e => {
